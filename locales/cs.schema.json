@@ -848,6 +848,9 @@
           },
           "options__2": {
             "label": "Mega nabídka"
+          },
+          "options__3": {
+            "label": "Výsuvný panel"
           }
         },
         "mobile_layout": {
