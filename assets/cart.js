@@ -27,6 +27,7 @@ class CartItems extends HTMLElement {
   cartUpdateUnsubscriber = undefined;
 
   connectedCallback() {
+    document.querySelector('body').classList.toggle('is-empty', this.classList.contains('is-empty'))
     this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
       if (event.source === 'cart-items') {
         return;
@@ -42,6 +43,7 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
+    document.querySelector('body').classList.toggle('is-empty', this.classList.contains('is-empty'))
     this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
   }
 
@@ -106,7 +108,7 @@ class CartItems extends HTMLElement {
           this.updateLiveRegions(line, parsedState.errors);
           return;
         }
-
+        document.querySelector('body').classList.toggle('is-empty', parsedState.item_count === 0);
         this.classList.toggle('is-empty', parsedState.item_count === 0);
         const cartDrawerWrapper = document.querySelector('cart-drawer');
         const cartFooter = document.getElementById('main-cart-footer');

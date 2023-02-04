@@ -1,211 +1,155 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "slideshow": {
+      "type": "slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "template--14574382874688__7095dbd4-d6f8-4bc8-bd4a-de642755e15f-1674327328d944972f-0": {
+          "type": "slide",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "template--14574382874688__7095dbd4-d6f8-4bc8-bd4a-de642755e15f-1674327328d944972f-0"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand</p>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+    "main_home_categories": {
+      "type": "main-home-categories",
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "collection_list": [
+          "batas-de-linho",
+          "calca-slim-milao",
+          "calca-slim-veneza",
+          "calcas-mais-vendidas",
+          "calcas-alfaiataria"
+        ]
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "main_home_call": {
+      "type": "main-home-call",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
+        "sub_title": "ALTO VERÃO",
+        "title": "COMPRE E GANHE",
+        "text": "Ganhe uma toalha king size exclusiva em compras acima de R$1.999",
+        "product": "bata-vicenza-masculina-manga-longa-em-linho-branco",
+        "text_btn": "Comprar",
+        "image": "shopify:\/\/shop_images\/673a70b8-8ab8-4dce-b895-7a5ee3c1afd8___f7f5bb52477d0e2f059c8075355e2550.gif"
       }
     },
-    "collage": {
-      "type": "collage",
+    "main_home_collage": {
+      "type": "main-home-collage",
       "blocks": {
-        "collection-0": {
+        "fef3b355-a047-449c-95d6-d9a00b7f550e": {
           "type": "collection",
           "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/68eb29cd-7603-43a9-b821-9ba4adb5ccbf___0640e4f0d48bf796831f31e117a50b12.jpg",
+            "title": "Até 50% OFF",
+            "text": "oportunidades especiais para renovar o visual",
+            "text_btn": "Comprar",
             "product": "",
-            "second_image": false
+            "collection": "batas-de-linho"
           }
         },
-        "collection-1": {
+        "691fed9b-47a4-46f2-83dd-0f51dc7e0b85": {
           "type": "collection",
           "settings": {
+            "image": "shopify:\/\/shop_images\/e85411eb-1930-471c-9fe8-9a30a13d25c0___5652b1085f8d0d3bbb7857c1e7f607d3.jpg",
+            "title": "Calça 247",
+            "text": "parece jeans, mas é moletom",
+            "text_btn": "Comprar",
+            "product": "calca-alfaiataria-milao-classic-blue",
+            "collection": ""
+          }
+        },
+        "80b3fc9c-6add-4637-8657-82961d71705b": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/75564b83-e448-499c-a359-3108456df32f___ebfcb854907185a1b863aa59aeaffcdd.webp",
+            "title": "Camisa Paris",
+            "text": "a camisa perfeita existe",
+            "text_btn": "Comprar",
+            "product": "calca-alfaiataria-milao-telha",
             "collection": ""
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "fef3b355-a047-449c-95d6-d9a00b7f550e",
+        "691fed9b-47a4-46f2-83dd-0f51dc7e0b85",
+        "80b3fc9c-6add-4637-8657-82961d71705b"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
-    "video": {
-      "type": "video",
+    "main_home_products": {
+      "type": "main-home-products",
       "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "collection": "mais-vendidas",
+        "text_btn": "Ver todas as novidades"
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
+    "main_home_products_2": {
+      "type": "main-home-products",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "collection": "calcas-mais-vendidas",
+        "text_btn": "Ver todas as novidades"
+      }
+    },
+    "main_home_products_3": {
+      "type": "main-home-products",
+      "settings": {
+        "collection": "camisas",
+        "text_btn": "Ver todas as novidades"
+      }
+    },
+    "main_home_feedback": {
+      "type": "main-home-feedback",
+      "settings": {}
+    },
+    "main_home_banners": {
+      "type": "main-home-banners",
+      "settings": {
+        "title": "Produtos"
+      }
+    },
+    "main_home_snippets": {
+      "type": "main-home-snippets",
+      "settings": {
+        "title": "Produtos"
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "slideshow",
+    "main_home_categories",
+    "main_home_call",
+    "main_home_collage",
+    "main_home_products",
+    "main_home_products_2",
+    "main_home_products_3",
+    "main_home_feedback",
+    "main_home_banners",
+    "main_home_snippets"
   ]
 }

@@ -36,6 +36,32 @@
   }
 }
 
+.collection-hero__inner{
+  padding: 10px 10px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+
+  max-width: 1536px;
+}
+
+.collection-hero__inner .bread-crumb{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #282828;
+  letter-spacing: -.003em;
+  text-transform: none;
+  font-size: 13px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.collection-hero__inner {
+
+}
+.collection-hero__inner .bread-crumb span{
+  color: #808284;
+}
+
 .collection-hero__title {
   margin: 2.5rem 0;
 }

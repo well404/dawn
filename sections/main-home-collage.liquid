@@ -1,0 +1,86 @@
+{{ 'main-home-collage.css' | asset_url | stylesheet_tag }}
+
+<section class="main-home-collage">
+  <div class="box-grid">
+
+    {%- for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when 'collection' -%}
+          {%- liquid
+            if block.settings.product.url
+              assign url = block.settings.product.url
+            else
+              assign url = block.settings.collection.url
+            endif
+          -%}
+
+          <a href="{{ url }}">
+            <div class="box-image">
+              {{ block.settings.image.image.src | img_url: 'master' | img_tag }}
+            </div>
+      
+            <div class="box-content">
+              <h2>{{ block.settings.title }}</h2>
+              <h3>{{ block.settings.text }}</h3>
+              <p>
+                <span>{{ block.settings.text_btn }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+              </p>
+            </div>
+          </a>
+      {%- endcase -%}
+    {% endfor %}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Coleção Grid",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "max_blocks": 5,
+  "blocks": [
+     {
+       "name": "Coleção",
+       "type": "collection",
+       "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Selecione a imagem."
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Titulo"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Texto"
+          },
+          {
+            "type": "text",
+            "id": "text_btn",
+            "label": "Texto Botão",
+            "default": "Comprar"
+          },
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Selecione o produto."
+          },
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Selecione a coleção."
+          }
+       ]
+     }
+  ]
+}
+{% endschema %}

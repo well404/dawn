@@ -1,0 +1,64 @@
+.main-home-feedback{
+    display: flex;
+    margin: 50px 0;
+}
+.main-home-feedback > div {
+    width: 50%;
+    flex: 1;
+}
+
+.main-home-feedback .box-image{
+    height: 544px;
+    position: relative;
+}
+
+.main-home-feedback .box-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-home-feedback .box-content{
+    padding: 52px;
+    background-color: rgb(241,241,241);
+}
+
+.main-home-feedback .box-content h5{
+    color: black;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.main-home-feedback .box-content .box-stars{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.main-home-feedback .box-content .box-stars svg{
+    width: 15px;
+    fill: black;
+}
+
+.main-home-feedback .box-content p{
+    font-size: 24px;
+    color: rgb(40,40,40);
+    max-width: 413px;
+    line-height: 150%;
+}
+
+.main-home-feedback .box-content h6{
+    color: #808284;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.main-home-feedback .box-content h6 a{
+    color: #808284;
+    text-decoration: underline;
+}

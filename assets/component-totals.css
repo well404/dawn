@@ -1,7 +1,10 @@
 .totals {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+
+  padding: 15px 0;
+
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
 }
 
 .totals > * {
@@ -9,8 +12,11 @@
   margin: 0;
 }
 
-.totals > h2 {
+.totals > h2,
+.totals p {
   font-size: calc(var(--font-heading-scale) * 1.6rem);
+  color: #676767;
+  font-size: 13px;
 }
 
 .totals * {
@@ -29,8 +35,12 @@
   margin-top: 2rem;
 }
 
+.tax-note{
+  text-align: left !important;
+}
+
 @media all and (min-width: 750px) {
   .totals {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 }

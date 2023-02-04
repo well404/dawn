@@ -279,8 +279,9 @@ html.no-js .no-js-hidden {
   }
 
   .page-width-desktop {
-    max-width: var(--page-width);
-    padding: 0 5rem;
+    /* max-width: var(--page-width); */
+    max-width: 1520px;
+    padding: 0 10px;
   }
 }
 
@@ -985,6 +986,7 @@ summary::-webkit-details-marker {
 }
 
 .title-wrapper--no-top-margin {
+  max-width: 1500px;
   margin-top: 0;
 }
 
@@ -1235,7 +1237,6 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
 }
 
@@ -2203,8 +2204,9 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 /* section-announcement-bar */
 .announcement-bar {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
   color: rgb(var(--color-foreground));
+
+  background-color: black;
 }
 
 .announcement-bar__link {
@@ -2235,6 +2237,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
   padding: 1rem 0;
   margin: 0;
   letter-spacing: 0.1rem;
+  color: #fff;
+  font-weight: 600;
 }
 
 /* section-header */
@@ -2272,10 +2276,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
-}
-
-.header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .header {
@@ -2617,10 +2617,58 @@ details[open] > .header__icon--menu .icon-hamburger {
   transform: translateY(-1.5rem);
 }
 
+.js details > .header__submenu  .box {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+
+.js details > .header__submenu  .box ul {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  min-width: 240px;
+}
+
+.js details > .header__submenu  .box ul li:hover{
+  text-decoration: none !important;
+  border-bottom: none !important;
+  opacity: 0.8;
+}
+
+.js details > .header__submenu  .box .box-products-example{
+  display: flex;
+  gap: 20px;
+}
+
+.js details > .header__submenu  .box .box-products-example a {
+  display: flex;
+  flex-direction: column;
+}
+
+.js details > .header__submenu  .box .box-products-example a img{
+  max-width: 100%;
+  height: auto;
+}
+
+.js details > .header__submenu  .box .box-products-example span{
+  letter-spacing: -.006em;
+  text-transform: none;
+  font-weight: 500;
+  margin: 12px 0 0;
+  color: #282828;
+  font-size: 14px;
+}
+
 details[open] > .header__submenu {
   animation: animateMenuOpen var(--duration-default) ease;
   animation-fill-mode: forwards;
   z-index: 1;
+
+  left: 0;
+  padding: 40px 0;
 }
 
 @media (prefers-reduced-motion) {
@@ -2660,12 +2708,25 @@ details[open] > .header__submenu {
   }
 }
 
+.list-menu {
+  display: flex;
+}
+
+.list-menu li {
+  border-bottom: 1px solid transparent;
+}
+
+.list-menu li:hover{
+  border-bottom-color: #282828;
+}
+
 .header__menu {
   padding: 0 1rem;
 }
 
+
 .header__menu-item {
-  padding: 1.2rem;
+  padding: 19px 20px !important;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
@@ -2676,15 +2737,11 @@ details[open] > .header__submenu {
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
-}
-
-.header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
-
-details[open] > .header__menu-item {
-  text-decoration: underline;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #282828;
+  font-size: 12px;
+  text-decoration: none !important;
 }
 
 details[open]:hover > .header__menu-item {
@@ -2736,8 +2793,16 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__submenu .header__menu-item {
-  justify-content: space-between;
-  padding: 0.8rem 2.4rem;
+  letter-spacing: -.011em;
+  text-transform: none;
+  min-height: auto;
+  padding: 0 0 0.5rem;
+  border: 0;
+  color: #282828;
+  transition: all .2s ease-in-out;
+  white-space: normal;
+  padding: 9px !important;
+  font-size: 16px;
 }
 
 .header__submenu .header__submenu .header__menu-item {
@@ -2745,6 +2810,7 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__menu-item .icon-caret {
+  display: none;
   right: 0.8rem;
 }
 
@@ -2754,9 +2820,11 @@ details[open] > .header__menu-item .icon-caret {
   position: static;
 }
 
+
+
 header-menu > details,
 details-disclosure > details {
-  position: relative;
+  /* position: relative; */
 }
 
 @keyframes animateMenuOpen {
@@ -2807,6 +2875,11 @@ details-disclosure > details {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
   background-attachment: fixed;
+}
+
+sticky-header{
+  border-top: 1px solid #dfe0e1;
+  border-bottom: 1px solid #dfe0e1;
 }
 
 @media screen and (forced-colors: active) {

@@ -1,0 +1,128 @@
+.component-product-card{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.component-product-card .box-image {
+    position: relative;
+    width: 100%;
+    height: 570px;
+
+    background-color: rgb(185, 185, 185);
+}
+
+.component-product-card .box-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card__media{
+    position: absolute;
+    inset: 0;
+}
+
+.card__media > div{
+    position: absolute;
+    width: 100%;
+    inset: 0;
+}
+
+.component-product-card .box-image .new{
+    padding: 0.25rem 0.5rem;
+    background-color: #fff;
+
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 600;
+    line-height: 125%;
+    margin: 0;
+    color: rgb(40,40,40);
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.component-product-card .box-info {}
+
+.component-product-card .box-info h2{
+    letter-spacing: -.003em;
+    text-transform: none;
+    color: rgb(40,40,40);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.component-product-card .box-info .box-price{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.component-product-card .box-info .box-price .old-price{
+    color: rgb(40,40,40);
+    font-size: 13px;
+    text-decoration: line-through;
+    font-weight: 600;
+
+    margin: 0;
+}
+
+.component-product-card .box-info .box-price .price-item--regular,
+.component-product-card .box-info .box-price .current-price{
+    color: #e7352b;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.component-product-card .box-info .box-price .parcel{
+    color: #808284;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.main-home-products .box-content .box-action {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main-home-products .box-content .box-action a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    letter-spacing: -.006em;
+    text-transform: none;
+    font-weight: 500;
+    padding: 12px 40px 12px 24px;
+    color: #282828;
+    transition: .2s ease-in-out;
+    font-size: 14px;
+}
+
+.main-home-products .box-content .box-action a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.main-home-products .box-content .box-action a:hover svg{
+    fill: white;
+}
+
+.main-home-products .box-content .box-action a svg{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 11px;
+    fill: #282828;
+}
+

@@ -53,6 +53,11 @@
         "label": "t:settings_schema.brand_information.settings.brand_image.label"
       },
       {
+        "type": "inline_richtext",
+        "id": "copyright",
+        "label": "Copyright"
+      },
+      {
         "type": "range",
         "id": "brand_image_width",
         "min": 50,
@@ -61,7 +66,8 @@
         "default": 100,
         "unit": "px",
         "label": "t:settings_schema.brand_information.settings.brand_image_width.label"
-      }
+      },
+     
     ]
   },
   {
@@ -1403,6 +1409,12 @@
       {
         "type": "header",
         "content": "t:settings_schema.social-media.settings.header.content"
+      },
+      {
+        "type": "text",
+        "id": "social_whatsapp_link",
+        "label": "Whatsapp",
+        "info": "https://api.whatsapp.com/send?phone=5562999999"
       },
       {
         "type": "text",

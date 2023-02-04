@@ -1,0 +1,164 @@
+.box-grid{
+  display: grid;
+  grid-template-columns: 250px auto;
+  max-width: 1536px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.product-grid-container{
+  padding-left: 32px;
+}
+
+#FacetFiltersForm{
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+#FacetFiltersForm #FacetsWrapperDesktop{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+#FacetFiltersForm .facets__heading{
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -.5px;
+
+  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f1f1f1;
+
+}
+
+#FacetFiltersForm .facets__disclosure{
+  display: block;
+  width: 100%;
+  margin-right: 0;
+
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+#FacetFiltersForm .facets__display{
+  border: 0;
+}
+
+.facets__disclosure .icon-caret,
+.facets__display .facets__header{
+  display: none;
+}
+
+.facets__display .facets__list,
+.facets__display .facets__price {
+  padding: 0;
+  border: 0;
+}
+
+.disclosure-has-popup[open] > .facets__summary::before{
+  display: none !important;
+}
+
+.facets__disclosure .facets__summary{
+  pointer-events: none;
+  text-transform: none;
+  font-weight: 500;
+}
+
+#FacetFiltersForm .facets__display{
+  position: static !important;
+  background: #fff;
+  max-width: 100%;
+  width: 100%;
+}
+
+#FacetFiltersForm .facets__display .facets__selected{
+  display: none;
+}
+
+.facets__price .field::after,
+.facets__price .field::before,
+.facets__price .field__label{
+  display: none;
+}
+
+.facets__price .field__input,
+.facets__price .field__input:active,
+.facets__price .field__input:focus{
+  border-bottom: 1px solid black;
+  padding: 2px 3px;
+  min-height: unset;
+  height: auto;
+}
+
+.facets__price {
+  display: flex;
+  align-items: flex-end;
+}
+
+.facets__price .field-currency{
+  align-self: unset !important;
+}
+
+
+.facets__price  input::-webkit-outer-spin-button,
+.facets__price  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.facets__price  input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.collection-title{
+  margin: 16px 0;
+  letter-spacing: -.019em;
+  text-transform: none;
+  font-weight: 500;
+  line-height: 125%;
+  font-size: 36px;
+}
+
+.box-filters-small .facets {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100% ;
+  max-width: 100%;
+}
+
+.box-filters-small .facets form{
+  display: flex; 
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  margin: 15px 0;
+  width: 100%;
+}
+
+.box-filters-small .facets form .product-count-vertical{
+  margin-left: 0;
+}
+
+.box-filters-small .facets form .facet-filters__sort:focus-visible{
+  outline: none;
+  box-shadow: unset;
+}
+
+.box-filters-small .facets form .facet-filters__sort option{
+  display: inline-block;
+  padding: 15px;
+  line-height: 30px;
+}

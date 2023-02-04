@@ -69,15 +69,15 @@
   }
 
   .banner--small:not(.banner--adapt) {
-    min-height: 42rem;
+    min-height: 500px;
   }
 
   .banner--medium:not(.banner--adapt) {
-    min-height: 56rem;
+    min-height: 500px;
   }
 
   .banner--large:not(.banner--adapt) {
-    min-height: 72rem;
+    min-height: 500px;
   }
 
   .banner__content.banner__content--top-left {
@@ -241,6 +241,8 @@
   align-items: center;
   justify-content: center;
   z-index: 2;
+
+  display: none;
 }
 
 @media screen and (min-width: 750px) {

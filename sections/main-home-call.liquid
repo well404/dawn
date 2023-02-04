@@ -1,0 +1,67 @@
+{{ 'main-home-call.css' | asset_url | stylesheet_tag }}
+
+<section class="main-home-call">
+    <div class="box-image">
+      {{ section.settings.image.image.src | img_url: 'master' | img_tag }}
+    </div>
+
+    <div class="box-content">
+
+        <div class="box-text">
+        
+            <p>{{ section.settings.sub_title | escape }}</p>
+            <h2>{{ section.settings.title | escape }}</h2>
+            <h3>{{ section.settings.text | escape }}</h3>
+    
+            <a href="{{ section.settings.product.url }}">
+                {{ section.settings.text_btn}}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Chamada Inicio",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "sub_title",
+      "label": "Sub título"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Selecione o produto."
+    },
+    {
+      "type": "text",
+      "id": "text_btn",
+      "label": "Texto botão.",
+      "default": "Comprar"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Selecione a imagem."
+    }
+  ]
+}
+{% endschema %}

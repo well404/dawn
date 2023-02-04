@@ -1,6 +1,6 @@
 <section
   id="MainProduct-{{ section.id }}"
-  class="page-width section-{{ section.id }}-padding"
+  class="main-product page-width section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -82,39 +82,45 @@
               </p>
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
-                <h1>{{ product.title | escape }}</h1>
+                <h1>
+                  {{ product.title | escape }}
+                </h1>
                 <a href="{{ product.url }}" class="product__title">
                   <h2 class="h1">
                     {{ product.title | escape }}
                   </h2>
                 </a>
-              </div>
-            {%- when 'price' -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                {%- render 'price',
-                  product: product,
-                  use_variant: true,
-                  show_badges: true,
-                  price_class: 'price--large'
-                -%}
-              </div>
-              {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-                <div class="product__tax caption rte">
-                  {%- if shop.taxes_included -%}
-                    {{ 'products.product.include_taxes' | t }}
+
+                {%- when 'price' -%}
+                  
+                  {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                    <div class="product__tax caption rte">
+                      {%- if shop.taxes_included -%}
+                        {{ 'products.product.include_taxes' | t }}
+                      {%- endif -%}
+                      {%- if shop.shipping_policy.body != blank -%}
+                        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                      {%- endif -%}
+                    </div>
                   {%- endif -%}
-                  {%- if shop.shipping_policy.body != blank -%}
-                    {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                  {%- endif -%}
-                </div>
-              {%- endif -%}
-              <div {{ block.shopify_attributes }}>
-                {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  {{ form | payment_terms }}
-                {%- endform -%}
+                  <div {{ block.shopify_attributes }}>
+                    {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+                    {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                      {{ form | payment_terms }}
+                    {%- endform -%}
+                  </div>
+                  
+                  <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                    {%- render 'price',
+                      product: product,
+                      use_variant: true,
+                      show_badges: true,
+                      price_class: 'price--large'
+                    -%}
+                  </div>
               </div>
+
             {%- when 'inventory' -%}
               <p
                 class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -162,12 +168,7 @@
                   {%- endif -%}
                 {%- endif -%}
               </p>
-            {%- when 'description' -%}
-              {%- if product.description != blank -%}
-                <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                  {{ product.description }}
-                </div>
-              {%- endif -%}
+            
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -179,7 +180,7 @@
               </p>
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
-            {%- when 'collapsible_tab' -%}
+            {% comment %} {%- when 'collapsible_tab' -%}
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary>
@@ -196,12 +197,15 @@
                     {{ block.settings.page.content }}
                   </div>
                 </details>
-              </div>
+              </div> {% endcomment %}
             {%- when 'quantity_selector' -%}
               <div
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
                 {{ block.shopify_attributes }}
               >
+
+                <button class="btn-medidas">Tabela de Medidas</button>
+
                 {% comment %} TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter {% endcomment %}
                 {% # theme-check-disable %}
                 {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
@@ -433,13 +437,60 @@
                 block: block
               %}
           {%- endcase -%}
+
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
+
+        <div class="box-medidas">
+          <div class="box-slides">
+            {%- for field in product.metafields.custom.material_utilizado.value -%}
+                <div class="slide">
+                  {{ field.preview_image | img_tag }}
+                </div>
+            {%- endfor -%} 
+          </div>
+        </div>
+
+        <div class="box-snippets">
+          <div class="box">
+            <img src="https://oficinareserva.vtexassets.com/assets/vtex/assets-builder/oficinareserva.store-theme/11.0.2/refresh___3e107a5461052f0760b49e2cddeec52a.svg" alt="">
+            <h3>Troca fácil</h3>
+            <p>60 dias pra trocar ou devolver, sem perguntas ou burocracias</p>
+          </div>
+    
+          <div class="box">
+            <img src="https://oficinareserva.vtexassets.com/assets/vtex/assets-builder/oficinareserva.store-theme/11.0.2/fast-shipping___94ab5c6c75f1d0fc70993be2e1f4278b.svg" alt="">
+            <h3>Frete grátis</h3>
+            <p>Em compras acima de R$599, a entrega é por nossa conta</p>
+          </div>
+    
+          <div class="box">
+            <img src="https://oficinareserva.vtexassets.com/assets/vtex/assets-builder/oficinareserva.store-theme/11.0.2/payment-card___57ebfc87d0a3ca8849feb2d680b91ec3.svg" alt="">
+            <h3>Formas de pagamento</h3>
+            <p>Pix ou cartão de crédito em até 10x sem juros (parcela mínima R$60)</p>
+          </div>
+    
+          <div class="box">
+            <img src="https://oficinareserva.vtexassets.com/assets/vtex/assets-builder/oficinareserva.store-theme/11.0.2/price-tag___4134bfa29abcbb14686d9f522ccbbe49.svg" alt="">
+            <h3>10% OFF na primeira compra</h3>
+            <p>Somente produtos Oficina, exceto Oficina Prime, kits e máscara. Usando o cupom "BEMVINDO". Não cumulativo.</p>
+          </div>
+        </div>
       </product-info>
+
     </div>
+
+    {%- if product.description != blank -%}
+
+      <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+        {{ product.description }}
+      </div>
+  
+    {%- endif -%}
+
     {%- if section.settings.media_position == 'right' -%}
       {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
       <div class="grid__item product__media-wrapper small-hide">
@@ -2069,3 +2120,15 @@
   ]
 }
 {% endschema %}
+
+<script>
+  $('.box-medidas .box-slides').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true
+  });
+  
+</script>

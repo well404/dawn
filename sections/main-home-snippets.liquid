@@ -1,0 +1,58 @@
+{{ 'main-home-snippets.css' | asset_url | stylesheet_tag }}
+
+<div class="box-content">
+  <div class="box-slides">
+    {%- for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when 'snippet' -%}
+        <div class="slide">
+          <img src="{{ block.settings.icon_url }}" alt="{{ block.settings.title }}">
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </div>
+        
+      {%- endcase -%}
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Snippets",
+  "tag": "section",
+  "class": "main-home-snippets",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "name": "Snippets",
+      "type": "snippet",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Selecione a imagem."
+        },
+        {
+          "type": "url",
+          "id": "icon_url",
+          "label": "Selecione a imagem."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texto"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

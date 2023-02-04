@@ -1,0 +1,87 @@
+.main-home-banners{}
+
+.main-home-banners .box-content{
+    display: flex;
+    gap: 5px;
+
+    max-width: 1520px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main-home-banners .box-content a{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.main-home-banners .box-content a:hover .box-info h4 svg{
+    transform: translateX(10px);
+}
+
+.main-home-banners .box-content a:hover .box-image img{
+    transform: scale(1.05);
+}
+
+.main-home-banners .box-content a .box-image{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-home-banners .box-content a .box-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 200ms linear;
+}
+
+.main-home-banners .box-content a .box-info{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 10;
+}
+
+.main-home-banners .box-content a .box-info h3{
+    margin: 0;
+    letter-spacing: -.019em;
+    text-transform: none;
+    font-weight: 500;
+    line-height: 125%;
+    color: #fff;
+    font-size: 36px;
+}
+
+.main-home-banners .box-content a .box-info p{
+    margin: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    padding-top: 0.25rem;
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 30px;
+    max-width: 416px;
+    min-height: 58px;
+}
+
+.main-home-banners .box-content a .box-info h4{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main-home-banners .box-content a .box-info h4 span{
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.main-home-banners .box-content a .box-info h4 svg{
+    width: 12px;
+    fill: #fff;
+    transition: all 200ms linear;
+}

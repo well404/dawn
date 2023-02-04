@@ -1,5 +1,9 @@
 .related-products {
   display: block;
+
+  max-width: 1520px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .related-products__heading {

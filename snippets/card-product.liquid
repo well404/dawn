@@ -19,6 +19,7 @@
 {% endcomment %}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
+{{ 'component-product-card.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -32,7 +33,79 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+
+  <a href="{{ card_product.url }}" class="component-product-card">
+    <div class="box-image">
+      {%- if card_product.featured_media -%}
+        <div class="card__media">
+          <div class="media media--transparent media--hover-effect">
+            {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+            <img
+              srcset="
+                {%- if card_product.media[1].width >= 165 -%}{{ card_product.media[1] | image_url: width: 360 }} 165w,{%- endif -%}
+                {%- if card_product.media[1].width >= 360 -%}{{ card_product.media[1] | image_url: width: 570 }} 360w,{%- endif -%}
+                {%- if card_product.media[1].width >= 533 -%}{{ card_product.media[1] | image_url: width: 720 }} 533w,{%- endif -%}
+                {%- if card_product.media[1].width >= 720 -%}{{ card_product.media[1] | image_url: width: 940 }} 720w,{%- endif -%}
+                {%- if card_product.media[1].width >= 940 -%}{{ card_product.media[1] | image_url: width: 1066 }} 940w,{%- endif -%}
+                {%- if card_product.media[1].width >= 1066 -%}{{ card_product.media[1] | image_url: width: 1200 }} 1066w,{%- endif -%}
+                {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w
+              "
+              src="{{ card_product.featured_media | image_url: width: 533 }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+              alt="{{ card_product.featured_media.alt | escape }}"
+              class="motion-reduce"
+              {% unless lazy_load == false %}
+                loading="lazy"
+              {% endunless %}
+              width="{{ card_product.featured_media.width }}"
+              height="{{ card_product.featured_media.height }}"
+            >
+            {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+
+            {%- if card_product.media[1] != null and show_secondary_image -%}
+              <img
+                srcset="
+                  {%- if card_product.media[1].width >= 165 -%}{{ card_product.media[1] | image_url: width: 360 }} 165w,{%- endif -%}
+                  {%- if card_product.media[1].width >= 360 -%}{{ card_product.media[1] | image_url: width: 570 }} 360w,{%- endif -%}
+                  {%- if card_product.media[1].width >= 533 -%}{{ card_product.media[1] | image_url: width: 720 }} 533w,{%- endif -%}
+                  {%- if card_product.media[1].width >= 720 -%}{{ card_product.media[1] | image_url: width: 940 }} 720w,{%- endif -%}
+                  {%- if card_product.media[1].width >= 940 -%}{{ card_product.media[1] | image_url: width: 1066 }} 940w,{%- endif -%}
+                  {%- if card_product.media[1].width >= 1066 -%}{{ card_product.media[1] | image_url: width: 1200 }} 1066w,{%- endif -%}
+                  {{ card_product.media[1] | image_url }} {{ card_product.media[1].width }}w
+                "
+                src="{{ card_product.media[1] | image_url: width: 533 }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                alt="{{ card_product.title | escape }}"
+                class="motion-reduce"
+                loading="lazy"
+                width="{{ card_product.media[1].width }}"
+                height="{{ card_product.media[1].height }}"
+              >
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {% comment %} <img src="https://oficinareserva.vtexassets.com/arquivos/ids/373681-800-1200?v=638065404721700000&width=800&height=1200&aspect=true" alt=""> {% endcomment %}
+
+      {%- if card_product.available == false -%}
+        <p class="new"> {{- 'products.product.sold_out' | t -}}</p>
+      {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+        <p class="new">{{- 'products.product.on_sale' | t -}}</p>
+      {%- endif -%}
+
+    </div>
+    
+    <div class="box-info">
+      <h2>{{ card_product.title | escape }}</h2>
+
+      <div class="box-price">
+        {% render 'price', product: card_product, price_class: '' %}
+      </div>
+    </div>
+  </a>
+
+  {% comment %} <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
         card
@@ -332,7 +405,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> {% endcomment %}
 {%- else -%}
   <div class="product-card-wrapper card-wrapper underline-links-hover">
     <div

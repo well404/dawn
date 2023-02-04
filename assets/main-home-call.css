@@ -1,0 +1,83 @@
+.main-home-call{
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 8px;
+}
+
+.main-home-call > div {
+    width: 50%;
+}
+
+.main-home-call .box-image{
+    position: relative;
+}
+
+.main-home-call .box-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+}
+
+.main-home-call .box-content {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #282828;
+    color: #f1f1f1;
+
+    padding: 150px 32px;
+}
+.main-home-call .box-content .box-text{
+    max-width: 432px;
+}
+.main-home-call .box-content .box-text p {
+    font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.main-home-call .box-content .box-text h2 {
+    margin: 0 0 0 24px;
+    margin-left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 125%;
+    color: #f1f1f1;
+}
+.main-home-call .box-content .box-text h3 {
+    line-height: 175%;
+    color: #f1f1f1;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 24px 0;
+}
+
+.main-home-call .box-content .box-text a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 20px;
+    text-underline-offset: 6px;
+
+}
+
+.main-home-call .box-content .box-text a:hover svg{
+    transform: translate(5px);
+}
+
+.main-home-call .box-content .box-text a svg{
+    width: 12px;
+    fill: #fff;
+    transition: all 200ms linear;
+}
