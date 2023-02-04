@@ -6,6 +6,43 @@
         "template--14574382874688__7095dbd4-d6f8-4bc8-bd4a-de642755e15f-1674327328d944972f-0": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/topo_167389577131981.gif",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "67bf3abb-44f2-491d-ad78-164db9db0d2c": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Verao-vicenza-categoria-05.gif",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "f262600c-2488-4f02-91b7-bdbc1433ff58": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Verao-vicenza-linho-01_67911e7a-2ceb-491e-9ec3-21b92091db0d.gif",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -22,7 +59,9 @@
         }
       },
       "block_order": [
-        "template--14574382874688__7095dbd4-d6f8-4bc8-bd4a-de642755e15f-1674327328d944972f-0"
+        "template--14574382874688__7095dbd4-d6f8-4bc8-bd4a-de642755e15f-1674327328d944972f-0",
+        "67bf3abb-44f2-491d-ad78-164db9db0d2c",
+        "f262600c-2488-4f02-91b7-bdbc1433ff58"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -125,18 +164,98 @@
     },
     "main_home_feedback": {
       "type": "main-home-feedback",
-      "settings": {}
+      "blocks": {
+        "bb665281-277b-45c0-a215-2a7955c6447e": {
+          "type": "feedback",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/569d0628-9bdd-4f6e-bb70-da44cd152b24___2b9de907f05461ed0d9ac40908c5ab63.webp",
+            "sub_title": "o que estão falando",
+            "text": "Não conhecia a marca. Ganhei de presente e veste super bem! confortável e toque macio. Curti mto!",
+            "name": "João P.",
+            "product": "bata-vicenza-masculina-manga-longa-em-linho-branco"
+          }
+        }
+      },
+      "block_order": [
+        "bb665281-277b-45c0-a215-2a7955c6447e"
+      ],
+      "settings": {
+      }
     },
     "main_home_banners": {
       "type": "main-home-banners",
+      "blocks": {
+        "614b4c73-5d69-431e-aa15-107d5745decf": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9e3badfe-75f6-4a45-b2b9-8476fa775a14___54b266b95d7260473af767136a504f45.jpg",
+            "title": "Lojas",
+            "text": "Estamos te esperando em um de nossos endereços",
+            "link": "",
+            "text_btn": "Encontre"
+          }
+        },
+        "b792e9d9-fd51-44bc-bfcf-059d5a7de69e": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/748a60d5-5d6e-41d8-9d6b-cca1622a4b75___18e5f9f31647b6699a7dd8d2ec9cedd8.jpg",
+            "title": "O básico, reinventado",
+            "text": "Roupas masculinas básicas, com caimento perfeito e feitas para durar.",
+            "link": "",
+            "text_btn": "Entenda"
+          }
+        }
+      },
+      "block_order": [
+        "614b4c73-5d69-431e-aa15-107d5745decf",
+        "b792e9d9-fd51-44bc-bfcf-059d5a7de69e"
+      ],
       "settings": {
-        "title": "Produtos"
       }
     },
     "main_home_snippets": {
       "type": "main-home-snippets",
+      "blocks": {
+        "09375b4a-c51d-4526-a035-8170246bcbbc": {
+          "type": "snippet",
+          "settings": {
+            "icon_url": "https:\/\/oficinareserva.vtexassets.com\/assets\/vtex\/assets-builder\/oficinareserva.store-theme\/12.0.4\/refresh___3e107a5461052f0760b49e2cddeec52a.svg",
+            "title": "Troca fácil",
+            "text": "60 dias pra trocar ou devolver, sem perguntas ou burocracias"
+          }
+        },
+        "9bfe8827-9c52-42c7-9f25-798b252e7cdc": {
+          "type": "snippet",
+          "settings": {
+            "icon_url": "https:\/\/oficinareserva.vtexassets.com\/assets\/vtex\/assets-builder\/oficinareserva.store-theme\/12.0.4\/fast-shipping___94ab5c6c75f1d0fc70993be2e1f4278b.svg",
+            "title": "Frete grátis",
+            "text": "Em compras acima de R$599, a entrega é por nossa conta"
+          }
+        },
+        "111d3816-41fa-456b-b9f6-e5168da80e7e": {
+          "type": "snippet",
+          "settings": {
+            "icon_url": "https:\/\/oficinareserva.vtexassets.com\/assets\/vtex\/assets-builder\/oficinareserva.store-theme\/12.0.4\/payment-card___57ebfc87d0a3ca8849feb2d680b91ec3.svg",
+            "title": "Formas de pagamento",
+            "text": "Pix ou cartão de crédito em até 10x sem juros (parcela mínima R$60)"
+          }
+        },
+        "5ae53e52-37f1-4cdf-b7f8-f8ea17f1c33d": {
+          "type": "snippet",
+          "settings": {
+            "icon_url": "https:\/\/oficinareserva.vtexassets.com\/assets\/vtex\/assets-builder\/oficinareserva.store-theme\/12.0.4\/price-tag___4134bfa29abcbb14686d9f522ccbbe49.svg",
+            "title": "10% OFF na primeira compra",
+            "text": "Somente produtos Oficina, exceto Oficina Prime, kits e máscara. Usando o cupom \"BEMVINDO\". Não cumulativo."
+          }
+        }
+      },
+      "block_order": [
+        "09375b4a-c51d-4526-a035-8170246bcbbc",
+        "9bfe8827-9c52-42c7-9f25-798b252e7cdc",
+        "111d3816-41fa-456b-b9f6-e5168da80e7e",
+        "5ae53e52-37f1-4cdf-b7f8-f8ea17f1c33d"
+      ],
       "settings": {
-        "title": "Produtos"
       }
     }
   },
