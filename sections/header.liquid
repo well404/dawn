@@ -159,6 +159,16 @@
         <a href="#">Sobre</a>
       </li>
     </ul>
+
+    <div class="box-actions-mobile">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+      </a>
+
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </a>
+    </div>
   </div>
   
   <div class="box-logo">
@@ -265,7 +275,7 @@
 
 <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
-    {%- if section.settings.menu != blank -%}
+    {% comment %} {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details id="Details-menu-drawer-container" class="menu-drawer-container">
           <summary class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
@@ -433,7 +443,7 @@
           </div>
         </details>
       </header-drawer>
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
 
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
       <details-modal class="header__search">
@@ -518,6 +528,23 @@
         </details>
       </details-modal>
     {%- endif -%}
+
+    {% if template.name == "index" %} 
+
+    <div class="box-header-mobile-categories">
+      {%- for collection in collections %}
+      <a href="{{ collection.url }}">
+        <div class="box-image">
+          {{ collection.image.src | img_url: 'master' | img_tag }}
+        </div>
+        <p>{{ collection.title }}</p>
+      </a>
+
+      {%- endfor %}
+    </div>
+
+    {% endif %}
+
 
     {% comment %} {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}

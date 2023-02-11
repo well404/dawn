@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "8.0.0-rc",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -44,18 +44,13 @@
       {
         "type": "richtext",
         "id": "brand_description",
-        "default": "<p></p>",
+        "default": "<p><\/p>",
         "label": "t:settings_schema.brand_information.settings.brand_description.label"
       },
       {
         "type": "image_picker",
         "id": "brand_image",
         "label": "t:settings_schema.brand_information.settings.brand_image.label"
-      },
-      {
-        "type": "inline_richtext",
-        "id": "copyright",
-        "label": "Copyright"
       },
       {
         "type": "range",
@@ -67,7 +62,11 @@
         "unit": "px",
         "label": "t:settings_schema.brand_information.settings.brand_image_width.label"
       },
-     
+      {
+        "type": "inline_richtext",
+        "id": "copyright",
+        "label": "Copyright"
+      }
     ]
   },
   {
@@ -1404,40 +1403,6 @@
     ]
   },
   {
-    "name": "t:settings_schema.brand_information.name",
-    "settings": [
-      {
-        "type": "paragraph",
-        "content": "t:settings_schema.brand_information.settings.paragraph.content"
-      },
-      {
-        "type": "inline_richtext",
-        "id": "brand_headline",
-        "label": "t:settings_schema.brand_information.settings.brand_headline.label"
-      },
-      {
-        "type": "richtext",
-        "id": "brand_description",
-        "label": "t:settings_schema.brand_information.settings.brand_description.label"
-      },
-      {
-        "type": "image_picker",
-        "id": "brand_image",
-        "label": "t:settings_schema.brand_information.settings.brand_image.label"
-      },
-      {
-        "type": "range",
-        "id": "brand_image_width",
-        "min": 50,
-        "max": 550,
-        "step": 5,
-        "default": 100,
-        "unit": "px",
-        "label": "t:settings_schema.brand_information.settings.brand_image_width.label"
-      }
-    ]
-  },
-  {
     "name": "t:settings_schema.social-media.name",
     "settings": [
       {
@@ -1448,7 +1413,7 @@
         "type": "text",
         "id": "social_whatsapp_link",
         "label": "Whatsapp",
-        "info": "https://api.whatsapp.com/send?phone=5562999999"
+        "info": "https:\/\/api.whatsapp.com\/send?phone=5562999999"
       },
       {
         "type": "text",

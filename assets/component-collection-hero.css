@@ -1,3 +1,62 @@
+
+.box-related-collections .slides{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px;
+}
+
+.box-related-collections .slides .slide {
+  width: 100%;
+}
+
+.box-related-collections .slides .slide .box-collection .box-image{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-related-collections .slides .slide .box-collection .box-image img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: all 100ms linear;
+}
+
+.box-related-collections .slides .slide .box-collection h3{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box-related-collections .slides .slide .box-collection h3 svg{
+  width: 10px;
+  transition: all 100ms linear;
+}
+
+.box-related-collections .slides .slide:hover .box-collection h3 svg{
+  transform: translateX(10px);
+}
+
+
+.box-related-collections .slides .slide:hover .box-collection .box-image img{
+  transform: scale(1.05);
+}
+
+.box-related-collections .slides .slide .box-collection p {
+  font-size: 14px;
+  color: #4a4a4a;
+  -webkit-margin-before: 0.25rem;
+  margin-block-start: 0.25rem;
+  -webkit-margin-after: 0.25rem;
+  margin-block-end: 0.25rem;
+}
+
 .collection-hero__inner {
   display: flex;
   flex-direction: column;

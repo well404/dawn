@@ -204,3 +204,31 @@ slideshow-component:not(.page-width) .slider-buttons {
   opacity: 0;
   transform: scale(.8)
 }
+
+
+.slideshow__controls{
+  position: static;
+}
+
+.slider-button{
+  position: absolute;
+  top: 50%;
+  z-index: 15;
+}
+
+.slider-button--prev{
+  left: 15px;
+}
+
+.slider-button--next{
+  right: 15px;
+}
+
+.slider-button svg{
+  fill: white;
+  color: white;
+}
+
+.slider-counter{
+  display: none;
+}

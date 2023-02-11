@@ -17,6 +17,7 @@
 .main-home-newsletter .newsletter-form,
 .main-home-newsletter .newsletter-form__field-wrapper{
     max-width: 510px;
+    margin: 0 auto;
 }
 
 .main-home-newsletter .newsletter-form .field::after{
@@ -44,4 +45,10 @@
 
 .main-home-newsletter .newsletter-form .newsletter-form__button svg{
     width: 10px;
+}
+
+@media screen and (max-width: 749px) {
+    .main-home-newsletter{
+        padding: 43px 10px;
+    }
 }

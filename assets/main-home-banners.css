@@ -85,3 +85,26 @@
     fill: #fff;
     transition: all 200ms linear;
 }
+
+@media screen and (max-width: 749px) {
+    .main-home-banners .box-content a .box-image{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+ 
+    .main-home-banners .box-content{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .main-home-banners .box-content a .box-info{
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .main-home-banners .box-content a .box-info p{
+        min-height: auto;
+    }
+}

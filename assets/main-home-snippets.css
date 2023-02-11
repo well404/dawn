@@ -27,6 +27,7 @@
     font-weight: 500;
     color: #282828;
     font-size: 13px;
+    text-align: center;
 }
 
 .main-home-snippets .box-slides .slide p {
@@ -36,4 +37,37 @@
     font-size: 13px;
     color: rgb(148, 151, 153);
     line-height: 15px;
+}
+
+
+@media screen and (max-width: 749px) {
+
+    .main-home-snippets{
+        margin: 20px 0;
+    }
+    
+    .main-home-snippets .box-slides{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .main-home-snippets .box-slides .slide{
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-home-snippets .box-slides .slide img{
+        width: 24px;
+        height: 24px;
+    }
+    
+    .main-home-snippets .box-slides .slide h3,
+    .main-home-snippets .box-slides .slide p{
+        font-size: 11px;
+    }
+    
 }

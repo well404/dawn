@@ -162,3 +162,42 @@
   padding: 15px;
   line-height: 30px;
 }
+
+@media screen and (max-width: 749px) {
+  .box-grid{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .product-grid-container{
+    padding-left: 0;
+  }
+
+  .collection-hero__inner{
+    display: none;
+  }
+
+  .collection-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  #product-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  #product-grid .grid__item{
+    width: 100% !important;
+  }
+
+}

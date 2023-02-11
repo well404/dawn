@@ -126,3 +126,17 @@
     fill: #282828;
 }
 
+@media screen and (max-width: 600px) {
+    .component-product-card .box-image{
+        height: 300px;
+    }
+
+    .component-product-card .box-info h2{
+        min-height: 32px;
+    }
+    
+    .component-product-card .box-info{
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+}

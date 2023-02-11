@@ -108,3 +108,35 @@
     flex-direction: column;
     gap: 10px;
 }
+
+
+@media screen and (max-width: 749px) {
+    .main-home-collage{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .main-home-collage .box-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-home-collage{
+        padding: 0;
+        margin-bottom: 5px;
+        margin-top: -15px;
+    }
+
+    .main-home-collage .box-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main-home-collage .box-grid a .box-image{
+        height: 300px;
+    }
+
+}

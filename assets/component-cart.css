@@ -289,3 +289,21 @@ cart-items {
 .title-wrapper-with-link{
   display: none;
 }
+
+@media screen and (max-width: 749px) {
+  #MainContent{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additional-checkout-buttons{
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cart-item__details{
+    grid-column: 2 / 5;
+  }
+}

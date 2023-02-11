@@ -2207,8 +2207,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 /* section-announcement-bar */
 .announcement-bar {
   color: rgb(var(--color-foreground));
-
-  background-color: black;
+  background-color: #282828;
 }
 
 .announcement-bar__link {
@@ -3066,5 +3065,13 @@ sticky-header{
 
   .localization-form__select:focus {
     outline: transparent solid 1px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #pushdaddy-button-label{
+    transform: translate(-160px, -19px);
+    font-size: 13px !important;
   }
 }
