@@ -1858,39 +1858,11 @@ a.product__text {
   }
 
   .product-form__submit{
-    display: none;
-  }
-
-  #fix-buy-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    background: #11ab6b;
-    border: 0;
-    width: 100%;
-    font-weight: bold;
-    padding: 10px;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: 0;
-    box-shadow: none;
-    height: 45px;
-    letter-spacing: 0;
-
     position: fixed;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     right: 0;
     z-index: 10;
   }
- 
-  #fix-buy-btn svg{
-    width: 20px;
-    fill: white;
-  }
+
 }
