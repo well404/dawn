@@ -306,4 +306,20 @@ cart-items {
   .cart-item__details{
     grid-column: 2 / 5;
   }
+
+  .cart-item__totals{
+    grid-column: 2 / 4;
+  }
+
+  .cart-item__quantity{
+    grid-column: 4 / 5;
+  }
+
+  cart-remove-button .button{
+    bottom: 4px;
+  }
+
+  .cart-item .price--end{
+    margin-top: 8px;
+  }
 }
