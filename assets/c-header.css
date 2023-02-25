@@ -80,17 +80,10 @@
 
 .main-header .box-right .login{
     position: relative;
-    top: 0;
-    left: 0.125rem;
     display: block;
-    width: 30px;
-    height: 20px;
-    padding: 0;
-    background-image: url(https://oficinareserva.vtexassets.com/assets/vtex.file-manager-graphql/images/8a0c1a12-6099-4ebd-bbd6-e66ea5a1d067___c22b616….svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    font-size: 0;
-    margin-right: -5px;
+    font-size: 16px;
+    color: black;
+    margin-right: -7px;
 }
 
 

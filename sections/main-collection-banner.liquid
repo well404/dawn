@@ -9,6 +9,13 @@
   }
 {%- endstyle -%}
 
+
+{%- if collection.metafields.custom.banner.value -%}
+<div class="box-collection-banner">
+  {{ collection.metafields.custom.banner.value.src | img_url: "master" | img_tag }}
+</div>
+{%- endif -%}
+
 {%- if collection.metafields.custom.categorias_relacionadas.value -%}
 <div class="box-related-collections">
   <div class="slides">

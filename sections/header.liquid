@@ -144,19 +144,7 @@
   <div class="box-left">
     <ul class="menu">
       <li>
-        <a href="#">Prime</a>
-      </li>
-
-      <li>
-        <a href="#">The Post</a>
-      </li>
-
-      <li>
-        <a href="#">Lojas</a>
-      </li>
-
-      <li>
-        <a href="#">Sobre</a>
+        <a href="#">Atacado</a>
       </li>
     </ul>
 
@@ -577,7 +565,7 @@
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
-                  <header-menu>
+                  <header-menu data-url="{{ link.url }}">
                     <details id="Details-HeaderMenu-{{ forloop.index }}">
                       <summary class="header__menu-item list-menu__item link focus-inset">
                         <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
@@ -615,7 +603,7 @@
                           </ul>
 
                           <div class="box-products-example">
-                           {% for i in (1..2) %}
+                            {% for i in (1..2) %}
                             {% assign min = 1 %}
                             {% assign max = collections.all.products.length %}
                             {% assign diff = max | minus: min %}
@@ -647,7 +635,7 @@
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
-                  <header-menu>
+                  <header-menu data-url="{{ link.url }}">
                     <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
                       <summary class="header__menu-item list-menu__item link focus-inset">
                         <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
@@ -832,6 +820,7 @@
       this.headerBounds = {};
 
       this.setHeaderHeight();
+      this.addMouseOverOut();
 
       window.matchMedia('(max-width: 990px)').addEventListener('change', this.setHeaderHeight.bind(this));
 
@@ -850,6 +839,22 @@
       window.addEventListener('scroll', this.onScrollHandler, false);
 
       this.createObserver();
+    }
+
+    addMouseOverOut(){
+      const setState = (e, state) => $(e).find('details').attr('open', state)
+
+      $('header-menu').on('click', function(e){
+        e.stopPropagation()
+        window.location.replace($(this).data('url'));
+      })
+      $('header-menu').on('mouseover',function(){
+        setState(this, true)
+      })
+
+      $('header-menu').on('mouseleave',function(){
+        setState(this, false)
+      })
     }
 
     setHeaderHeight() {
