@@ -126,6 +126,49 @@
       "type": "main-home-products",
       "settings": {}
     },
+    "main_home_feedback": {
+      "type": "main-home-feedback",
+      "blocks": {
+        "bb665281-277b-45c0-a215-2a7955c6447e": {
+          "type": "feedback",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-22_at_11.50.17.jpg",
+            "sub_title": "Não é o produto, é a história!",
+            "text": "Cara passando para agradecer a roupa enviada no mês passado, foi bem a tempo de chegar antes da viagem. Usei ela para pedir minha namorada em casamento em Santorini.",
+            "name": "Lucas Dias",
+            "product": "camisa-vicenza-linho-manga-curta-gola-padre-vies-off"
+          }
+        },
+        "4cca40cb-fc7f-4d98-a39a-9f1f9f99b7ee": {
+          "type": "feedback",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-22_at_11.50.18.jpg",
+            "sub_title": "O que estão falando por ai",
+            "text": "A Camisa ficou top, encaixou que nem uma luva.",
+            "name": "Daniel Sousa",
+            "product": ""
+          }
+        },
+        "074cf45f-5cc1-4fae-b4fc-70e14fce6aa4": {
+          "type": "feedback",
+          "disabled": true,
+          "settings": {
+            "sub_title": "",
+            "text": "Cara... Minha camisa acabou de chegar. E eu fiquei MUITO feliz!!! Vc não tem ideia de como é difícil encontrar camisa pra mim pelo fato de eu ser baixinho, e a da Vicenza ficou PERFEITA. Parece que foi feita sob medida pra mim. Eu amei.Por favor, nunca deixem de vender o tamanho PP!!Eu só vou comprar com vcs! Inclusive vou comprar mais uma na quarta-feira.Aquela tabela de tamanhos super completa no site de vcs fez toda a diferença!Muito obg, tô bem feliz!",
+            "name": "Raphael dos Anjos",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "bb665281-277b-45c0-a215-2a7955c6447e",
+        "4cca40cb-fc7f-4d98-a39a-9f1f9f99b7ee",
+        "074cf45f-5cc1-4fae-b4fc-70e14fce6aa4"
+      ],
+      "settings": {
+      }
+    },
     "main_home_snippets": {
       "type": "main-home-snippets",
       "blocks": {
@@ -208,8 +251,8 @@
     "main_home_categories",
     "main_home_call",
     "main_home_collage",
-    "main_home_products",
-    "main_home_feedback",
+    "main_home_products", 
+    "main_home_feedback", 
     "main_home_snippets",
     "main_home_banners"
   ]
