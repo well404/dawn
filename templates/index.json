@@ -6,7 +6,7 @@
         "template--14574382874688__7095dbd4-d6f8-4bc8-bd4a-de642755e15f-1674327328d944972f-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/topo_167389577131981.gif",
+            "image": "shopify:\/\/shop_images\/Banners-Shopfy-home-02.gif",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -24,25 +24,7 @@
         "67bf3abb-44f2-491d-ad78-164db9db0d2c": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Verao-vicenza-categoria-05.gif",
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "f262600c-2488-4f02-91b7-bdbc1433ff58": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Verao-vicenza-linho-01_67911e7a-2ceb-491e-9ec3-21b92091db0d.gif",
+            "image": "shopify:\/\/shop_images\/Banners-Shopfy-home-01.gif",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -60,8 +42,7 @@
       },
       "block_order": [
         "template--14574382874688__7095dbd4-d6f8-4bc8-bd4a-de642755e15f-1674327328d944972f-0",
-        "67bf3abb-44f2-491d-ad78-164db9db0d2c",
-        "f262600c-2488-4f02-91b7-bdbc1433ff58"
+        "67bf3abb-44f2-491d-ad78-164db9db0d2c"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -77,23 +58,23 @@
       "type": "main-home-categories",
       "settings": {
         "collection_list": [
-          "batas-de-linho",
-          "calca-slim-milao",
-          "calca-slim-veneza",
+          "mais-vendidas",
           "calcas-mais-vendidas",
-          "calcas-alfaiataria"
+          "camisas-mais-vendidas",
+          "polos",
+          "camiseta-malha-egipcia"
         ]
       }
     },
     "main_home_call": {
       "type": "main-home-call",
       "settings": {
-        "sub_title": "ALTO VERÃO",
+        "sub_title": "brinde vicenza",
         "title": "COMPRE E GANHE",
-        "text": "Ganhe uma toalha king size exclusiva em compras acima de R$1.999",
+        "text": "Ganhe um cinto de couro exclusivo em compras acima de R$600,00",
         "product": "bata-vicenza-masculina-manga-longa-em-linho-branco",
         "text_btn": "Comprar",
-        "image": "shopify:\/\/shop_images\/673a70b8-8ab8-4dce-b895-7a5ee3c1afd8___f7f5bb52477d0e2f059c8075355e2550.gif"
+        "image": "shopify:\/\/shop_images\/banner-cinto-01.gif"
       }
     },
     "main_home_collage": {
@@ -102,7 +83,7 @@
         "fef3b355-a047-449c-95d6-d9a00b7f550e": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/68eb29cd-7603-43a9-b821-9ba4adb5ccbf___0640e4f0d48bf796831f31e117a50b12.jpg",
+            "image": "shopify:\/\/shop_images\/07_2edd3af3-11c1-4494-a068-19f8ffd04fa0.jpg",
             "title": "Até 50% OFF",
             "text": "oportunidades especiais para renovar o visual",
             "text_btn": "Comprar",
@@ -113,7 +94,7 @@
         "691fed9b-47a4-46f2-83dd-0f51dc7e0b85": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/e85411eb-1930-471c-9fe8-9a30a13d25c0___5652b1085f8d0d3bbb7857c1e7f607d3.jpg",
+            "image": "shopify:\/\/shop_images\/08.jpg",
             "title": "Calça 247",
             "text": "parece jeans, mas é moletom",
             "text_btn": "Comprar",
@@ -124,9 +105,9 @@
         "80b3fc9c-6add-4637-8657-82961d71705b": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/75564b83-e448-499c-a359-3108456df32f___ebfcb854907185a1b863aa59aeaffcdd.webp",
-            "title": "Camisa Paris",
-            "text": "a camisa perfeita existe",
+            "image": "shopify:\/\/shop_images\/09.jpg",
+            "title": "Básica Egípcia",
+            "text": "A única camiseta que você precisa.",
             "text_btn": "Comprar",
             "product": "calca-alfaiataria-milao-telha",
             "collection": ""
@@ -141,25 +122,25 @@
       "settings": {
       }
     },
+    "main_home_products_3": {
+      "type": "main-home-products",
+      "settings": {
+        "collection": "camisas",
+        "text_btn": "Ver Camisas Manga Longa"
+      }
+    },
     "main_home_products": {
       "type": "main-home-products",
       "settings": {
-        "collection": "mais-vendidas",
-        "text_btn": "Ver todas as novidades"
+        "collection": "calca-slim-milao",
+        "text_btn": "Ver Calças Alfaiataria Milão"
       }
     },
     "main_home_products_2": {
       "type": "main-home-products",
       "settings": {
-        "collection": "calcas-mais-vendidas",
-        "text_btn": "Ver todas as novidades"
-      }
-    },
-    "main_home_products_3": {
-      "type": "main-home-products",
-      "settings": {
-        "collection": "camisas",
-        "text_btn": "Ver todas as novidades"
+        "collection": "camisa-gola-padre",
+        "text_btn": "Ver Camisas Gola Padre"
       }
     },
     "main_home_feedback": {
@@ -168,47 +149,39 @@
         "bb665281-277b-45c0-a215-2a7955c6447e": {
           "type": "feedback",
           "settings": {
-            "image": "shopify:\/\/shop_images\/569d0628-9bdd-4f6e-bb70-da44cd152b24___2b9de907f05461ed0d9ac40908c5ab63.webp",
-            "sub_title": "o que estão falando",
-            "text": "Não conhecia a marca. Ganhei de presente e veste super bem! confortável e toque macio. Curti mto!",
-            "name": "João P.",
-            "product": "bata-vicenza-masculina-manga-longa-em-linho-branco"
-          }
-        }
-      },
-      "block_order": [
-        "bb665281-277b-45c0-a215-2a7955c6447e"
-      ],
-      "settings": {
-      }
-    },
-    "main_home_banners": {
-      "type": "main-home-banners",
-      "blocks": {
-        "614b4c73-5d69-431e-aa15-107d5745decf": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/9e3badfe-75f6-4a45-b2b9-8476fa775a14___54b266b95d7260473af767136a504f45.jpg",
-            "title": "Lojas",
-            "text": "Estamos te esperando em um de nossos endereços",
-            "link": "",
-            "text_btn": "Encontre"
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-22_at_11.50.17.jpg",
+            "sub_title": "Não é o produto, é a história!",
+            "text": "Cara passando para agradecer a roupa enviada no mês passado, foi bem a tempo de chegar antes da viagem. Usei ela para pedir minha namorada em casamento em Santorini.",
+            "name": "Lucas Dias",
+            "product": "camisa-vicenza-linho-manga-curta-gola-padre-vies-off"
           }
         },
-        "b792e9d9-fd51-44bc-bfcf-059d5a7de69e": {
-          "type": "banner",
+        "4cca40cb-fc7f-4d98-a39a-9f1f9f99b7ee": {
+          "type": "feedback",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/748a60d5-5d6e-41d8-9d6b-cca1622a4b75___18e5f9f31647b6699a7dd8d2ec9cedd8.jpg",
-            "title": "O básico, reinventado",
-            "text": "Roupas masculinas básicas, com caimento perfeito e feitas para durar.",
-            "link": "",
-            "text_btn": "Entenda"
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-22_at_11.50.18.jpg",
+            "sub_title": "O que estão falando por ai",
+            "text": "A Camisa ficou top, encaixou que nem uma luva.",
+            "name": "Daniel Sousa",
+            "product": ""
+          }
+        },
+        "074cf45f-5cc1-4fae-b4fc-70e14fce6aa4": {
+          "type": "feedback",
+          "disabled": true,
+          "settings": {
+            "sub_title": "",
+            "text": "Cara... Minha camisa acabou de chegar. E eu fiquei MUITO feliz!!! Vc não tem ideia de como é difícil encontrar camisa pra mim pelo fato de eu ser baixinho, e a da Vicenza ficou PERFEITA. Parece que foi feita sob medida pra mim. Eu amei.Por favor, nunca deixem de vender o tamanho PP!!Eu só vou comprar com vcs! Inclusive vou comprar mais uma na quarta-feira.Aquela tabela de tamanhos super completa no site de vcs fez toda a diferença!Muito obg, tô bem feliz!",
+            "name": "Raphael dos Anjos",
+            "product": ""
           }
         }
       },
       "block_order": [
-        "614b4c73-5d69-431e-aa15-107d5745decf",
-        "b792e9d9-fd51-44bc-bfcf-059d5a7de69e"
+        "bb665281-277b-45c0-a215-2a7955c6447e",
+        "4cca40cb-fc7f-4d98-a39a-9f1f9f99b7ee",
+        "074cf45f-5cc1-4fae-b4fc-70e14fce6aa4"
       ],
       "settings": {
       }
@@ -221,7 +194,7 @@
           "settings": {
             "icon_url": "https:\/\/oficinareserva.vtexassets.com\/assets\/vtex\/assets-builder\/oficinareserva.store-theme\/12.0.4\/refresh___3e107a5461052f0760b49e2cddeec52a.svg",
             "title": "Troca fácil",
-            "text": "60 dias pra trocar ou devolver, sem perguntas ou burocracias"
+            "text": "7 dias pra trocar ou devolver, sem perguntas ou burocracias"
           }
         },
         "9bfe8827-9c52-42c7-9f25-798b252e7cdc": {
@@ -229,7 +202,7 @@
           "settings": {
             "icon_url": "https:\/\/oficinareserva.vtexassets.com\/assets\/vtex\/assets-builder\/oficinareserva.store-theme\/12.0.4\/fast-shipping___94ab5c6c75f1d0fc70993be2e1f4278b.svg",
             "title": "Frete grátis",
-            "text": "Em compras acima de R$599, a entrega é por nossa conta"
+            "text": "Em compras acima de R$380,00 a entrega é por nossa conta"
           }
         },
         "111d3816-41fa-456b-b9f6-e5168da80e7e": {
@@ -237,7 +210,7 @@
           "settings": {
             "icon_url": "https:\/\/oficinareserva.vtexassets.com\/assets\/vtex\/assets-builder\/oficinareserva.store-theme\/12.0.4\/payment-card___57ebfc87d0a3ca8849feb2d680b91ec3.svg",
             "title": "Formas de pagamento",
-            "text": "Pix ou cartão de crédito em até 10x sem juros (parcela mínima R$60)"
+            "text": "Pague no pix e ganhe 5%OFF ou cartão de crédito em até 6x sem juros"
           }
         },
         "5ae53e52-37f1-4cdf-b7f8-f8ea17f1c33d": {
@@ -245,7 +218,7 @@
           "settings": {
             "icon_url": "https:\/\/oficinareserva.vtexassets.com\/assets\/vtex\/assets-builder\/oficinareserva.store-theme\/12.0.4\/price-tag___4134bfa29abcbb14686d9f522ccbbe49.svg",
             "title": "10% OFF na primeira compra",
-            "text": "Somente produtos Oficina, exceto Oficina Prime, kits e máscara. Usando o cupom \"BEMVINDO\". Não cumulativo."
+            "text": "Usando o cupom \"NOVOGUERREIRO,\" válido em todo o site"
           }
         }
       },
@@ -257,6 +230,37 @@
       ],
       "settings": {
       }
+    },
+    "main_home_banners": {
+      "type": "main-home-banners",
+      "blocks": {
+        "614b4c73-5d69-431e-aa15-107d5745decf": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6d9769ba-c459-4a89-8451-fdedffb67684.jpg",
+            "title": "Lojas",
+            "text": "Estamos te esperando em um de nossos endereços",
+            "link": "",
+            "text_btn": "Encontre"
+          }
+        },
+        "b792e9d9-fd51-44bc-bfcf-059d5a7de69e": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/06.jpg",
+            "title": "Básica Egípcia",
+            "text": "Roupas masculinas básicas, com caimento perfeito e feitas para durar.",
+            "link": "",
+            "text_btn": "Entenda"
+          }
+        }
+      },
+      "block_order": [
+        "614b4c73-5d69-431e-aa15-107d5745decf",
+        "b792e9d9-fd51-44bc-bfcf-059d5a7de69e"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -264,11 +268,11 @@
     "main_home_categories",
     "main_home_call",
     "main_home_collage",
+    "main_home_products_3",
     "main_home_products",
     "main_home_products_2",
-    "main_home_products_3",
     "main_home_feedback",
-    "main_home_banners",
-    "main_home_snippets"
+    "main_home_snippets",
+    "main_home_banners"
   ]
 }
