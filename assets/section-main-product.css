@@ -1904,6 +1904,7 @@ a.product__text {
   padding: 5px;
 }
 
+.spr-icon-star:before,
 .spr-icon-star-empty:before{
   color: yellow;
 }
