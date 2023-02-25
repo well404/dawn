@@ -122,12 +122,9 @@
       "settings": {
       }
     },
-    "main_home_products_2": {
+    "main_home_products": {
       "type": "main-home-products",
-      "settings": {
-        "collection": "camisa-gola-padre",
-        "text_btn": "Ver Camisas Gola Padre"
-      }
+      "settings": {}
     },
     "main_home_snippets": {
       "type": "main-home-snippets",
