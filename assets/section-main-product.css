@@ -1894,3 +1894,16 @@ a.product__text {
     fill: white;
   }
 }
+
+.spr-form-input-text, .spr-form-input-email, 
+.spr-form-input-textarea{
+  padding: 5px 10px;
+}
+
+.spr-button, .spr-button-primary{
+  padding: 5px;
+}
+
+.spr-icon-star-empty:before{
+  color: yellow;
+}

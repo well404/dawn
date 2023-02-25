@@ -116,17 +116,17 @@
             assign footer_grid_class = 'grid--3-col-tablet'
           endif
         -%}
-        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--2-col-tablet {{ footer_grid_class }}">
+        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           <div class="footer-block grid__item">
             <h3>Minha Conta</h3>
 
             <ul class="menu">
               <li>
-                <a href="#">Meus dados</a>
+                <a href="{{ routes.account_login_url }}">Meus dados</a>
               </li>
 
               <li>
-                <a href="#">Meus Pedidos</a>
+                <a href="{{ routes.account_login_url }}">Meus Pedidos</a>
               </li>
             </ul>
           </div>
@@ -160,7 +160,7 @@
               </li>
 
               <li>
-                <a href="#">Pediso e Entregas</a>
+                <a href="#">Pedidos e Entregas</a>
               </li>
 
               <li>
