@@ -38,6 +38,11 @@
     <div class="box-image">
       {%- if card_product.featured_media -%}
         <div class="card__media">
+
+          {%- if card_product.metafields.custom.flag_one.value -%}
+            <span class="flag">{{card_product.metafields.custom.flag_one.value}}</span>
+          {%- endif -%}
+
           <div class="media media--transparent media--hover-effect">
             {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
             <img
@@ -92,6 +97,7 @@
         <p class="new"> {{- 'products.product.sold_out' | t -}}</p>
       {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
         <p class="new">{{- 'products.product.on_sale' | t -}}</p>
+        <span class="flag-percentage">{{ compare_at_price | minus:card_product.price | times:100 | divided_by:card_product.compare_at_price  }}%</span>
       {%- endif -%}
 
     </div>
