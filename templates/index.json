@@ -124,7 +124,36 @@
     },
     "main_home_products": {
       "type": "main-home-products",
-      "settings": {}
+      "blocks": {
+        "a791e995-96bc-4993-b614-e88199d3990c": {
+          "type": "custom-collection",
+          "settings": {
+            "text": "Lançamentos",
+            "collection": "lancamentos"
+          }
+        },
+        "0bb2ea31-d0ac-4188-9545-3dd5971b0602": {
+          "type": "custom-collection",
+          "settings": {
+            "text": "Camisas",
+            "collection": "camisas"
+          }
+        },
+        "598a8d23-26a2-4f23-8a96-d6f81abdbc68": {
+          "type": "custom-collection",
+          "settings": {
+            "text": "Camisetas",
+            "collection": "camiseta"
+          }
+        }
+      },
+      "block_order": [
+        "a791e995-96bc-4993-b614-e88199d3990c",
+        "0bb2ea31-d0ac-4188-9545-3dd5971b0602",
+        "598a8d23-26a2-4f23-8a96-d6f81abdbc68"
+      ],
+      "settings": {
+      }
     },
     "main_home_feedback": {
       "type": "main-home-feedback",
