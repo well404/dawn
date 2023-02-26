@@ -143,12 +143,11 @@
 <div class="main-header">
   <div class="box-left">
     <ul class="menu">
-      <li>
-        <a href="/pages/sobre">Sobre</a>
-      </li>
-      <li>
-        <a href="/pages/lojas">Lojas</a>
-      </li>
+      {%- for link in section.settings.menu_left.links -%}
+        <li>
+          <a href="{{ link.url }}">{{ link.title | escape }}</a>
+        </li>
+      {%- endfor %}
     </ul>
 
     <div class="box-actions-mobile">
@@ -1044,6 +1043,12 @@
       ],
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_left",
+      "default": "main-menu",
+      "label": "Menu Lateral"
     },
     {
       "type": "link_list",

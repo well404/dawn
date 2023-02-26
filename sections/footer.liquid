@@ -134,19 +134,19 @@
             <h3>Sobre</h3>
             <ul class="menu">
               <li>
-                <a href="#">Sobre a Vicenza</a>
+                <a href="/pages/sobre">Sobre a Vicenza</a>
               </li>
 
               <li>
-                <a href="#">Blog</a>
+                <a href="/pages/blog">Blog</a>
               </li>
 
               <li>
-                <a href="#">Encontre uma Loja</a>
+                <a href="/pages/lojas">Encontre uma Loja</a>
               </li>
 
               <li>
-                <a href="#">Multimarcas</a>
+                <a href="/pages/multimarcas">Multimarcas</a>
               </li>
             </ul>
           </div>
@@ -156,20 +156,41 @@
 
             <ul class="menu">
               <li>
-                <a href="#">Trocas e Devoluções</a>
+                <a href="/pages/troca-e-devolucoes">Trocas e Devoluções</a>
               </li>
 
               <li>
-                <a href="#">Pedidos e Entregas</a>
+                <a href="/pages/troca-de-pecas-intimas">Troca de peças íntimas</a>
               </li>
 
               <li>
-                <a href="#">Formas de Pagamento</a>
+                <a href="/pages/troca-pelo-site">Troca pelo site</a>
               </li>
 
               <li>
-                <a href="#">Privacidade</a>
+                <a href="/pages/troca-em-lojas-fisicas">Troca em lojas físicas</a>
               </li>
+
+              <li>
+                <a href="/pages/prazo-para-solicitacao">Prazo para solicitação</a>
+              </li>
+
+              <li>
+                <a href="/pages/compras-em-marketplaces">Compras em marketplaces</a>
+              </li>
+
+              <li>
+                <a href="/pages/pedidos-e-entrega">Pedidos e Entrega</a>
+              </li>
+
+              <li>
+                <a href="/pages/formas-de-pagamento">Formas de Pagamento</a>
+              </li>
+
+              <li>
+                <a href="/pages/politica-e-privacidade">Política e Privacidade</a>
+              </li>
+
             </ul>
           </div>
           <div class="footer-block grid__item">
@@ -181,7 +202,7 @@
               </li>
 
               <li>
-                <a href="mailTo: {{ shop.email }}" target="_blank">Email: {{ shop.email }}</a>
+                <a href="mailTo: sac@usevicenza.com" target="_blank">Email: sac@usevicenza.com</a>
               </li>
 
             </ul>
@@ -201,6 +222,20 @@
           </div>
       {%- endif -%}
 
+
+      <ul class="box-security-icons">
+        <li>
+          <img src="https://76698.cdn.simplo7.net/static/76698/certificado/footer_142799667316543.gif" alt="">
+        </li>
+
+        <li>
+          <img src="https://76698.cdn.simplo7.net/static/76698/galeria/166740112136990.png" alt="">
+        </li>
+
+        <li>
+          <img src="https://76698.cdn.simplo7.net/static/76698/galeria/166740048286556.png" id="selo-mercado-livre" alt="">
+        </li>
+      </ul>
     </div>
   {%- endif -%}
 
@@ -372,6 +407,12 @@
   customElements.define('localization-form', LocalizationForm);
 {% endjavascript %}
 
+<script>
+  $('.footer-block h3').on('click',function(){
+    $(this).siblings('.menu').first().toggle()
+  })
+</script>
+
 {% schema %}
 {
   "name": "t:sections.footer.name",
@@ -530,7 +571,7 @@
       "content": "t:sections.footer.settings.header__9.content",
       "info": "t:sections.footer.settings.header__9.info"
     },
-    {
+      {
       "type": "checkbox",
       "id": "enable_follow_on_shop",
       "default": false,
