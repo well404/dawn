@@ -605,19 +605,21 @@
                           </ul>
 
                           <div class="box-products-example">
-                            {% for i in (1..2) %}
-                            {% assign min = 1 %}
-                            {% assign max = collections.all.products.length %}
-                            {% assign diff = max | minus: min %}
-                            {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
-                            {% assign product = collections.all.products[randomNumber] %}
-                            <a  href="{{ product.url }}">
-                              <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}" /> 
-                            </a>
-                          {% endfor %}
-
+                            {% for collection in collections %}
+                              {%- if collection.title == link.title -%}
+                                {% for i in (1..2) %}
+                                  {% assign min = 1 %}
+                                  {% assign max = collections.all.products.length %}
+                                  {% assign diff = max | minus: min %}
+                                  {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+                                  {% assign product = collections.all.products[randomNumber] %}
+                                  <a  href="{{ product.url }}">
+                                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}" /> 
+                                  </a>
+                                {% endfor %}
+                              {%- endif -%}
+                            {% endfor %}
                           </div>
-
                         </div>
                       </div>
                     </details>
