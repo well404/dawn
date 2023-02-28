@@ -184,3 +184,10 @@
     min-height: 20rem;
   }
 }
+
+
+@media (max-width: 600px) {
+  .box-related-collections .slides{
+    display: block;
+  }
+}

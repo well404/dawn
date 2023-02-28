@@ -7,6 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Banners-Shopfy-home-02.gif",
+            "image_mobile": "shopify:\/\/shop_images\/Mobile-1.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -25,6 +26,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Banners-Shopfy-home-01.gif",
+            "image_mobile": "shopify:\/\/shop_images\/Mobile_689d86cb-83d1-46fb-b0ac-87c1fefdb232.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -170,7 +172,6 @@
         },
         "4cca40cb-fc7f-4d98-a39a-9f1f9f99b7ee": {
           "type": "feedback",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-02-22_at_11.50.18.jpg",
             "sub_title": "O que estão falando por ai",

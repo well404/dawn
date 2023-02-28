@@ -91,5 +91,14 @@
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
       {{ 'products.product.sold_out' | t }}
     </span>
+
+    {%- if product.compare_at_price > product.price and product.available -%}
+      <span class="flag-percentage">{{ compare_at_price | minus:product.price | times:100 | divided_by:product.compare_at_price  }}% off</span>
+    {%- endif -%}
+
+    {%- if product.metafields.custom.flag_one.value -%}
+      <span class="flag">{{product.metafields.custom.flag_one.value}}</span>
+    {%- endif -%}
+
   {%- endif -%}
 </div>

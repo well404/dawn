@@ -87,6 +87,16 @@
   </div>
 </div>
 
+<script>  
+  if($(window).width() < 600){
+    $(".box-related-collections .slides").slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false
+    })
+  }
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
