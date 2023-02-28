@@ -609,6 +609,10 @@
                             {% for collection in collections %}
                               
                               {%- if collection.title == 'Camisas' -%}
+                                fasdkljsfadlk
+                              {%- endif -%}
+
+                              {%- if collection.title == link.title -%}
                                 {% for i in (1..2) %}
                                   {% assign min = 1 %}
                                   {% assign max = collection.products.length %}
@@ -619,20 +623,6 @@
                                     <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}" /> 
                                   </a>
                                 {% endfor %}
-
-                              {%- elsif collection.title == link.title -%}
-                                {% for i in (1..2) %}
-                                  {% assign min = 1 %}
-                                  {% assign max = collection.products.length %}
-                                  {% assign diff = max | minus: min %}
-                                  {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
-                                  {% assign product = collection.products[randomNumber] %}
-                                  <a  href="{{ product.url }}">
-                                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}" /> 
-                                  </a>
-                                {% endfor %}
-                              {%- else -%}
-
                               {%- endif -%}
                             {% endfor %}
                           </div>
