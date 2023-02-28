@@ -605,13 +605,7 @@
                           </ul>
 
                           <div class="box-products-example">
-
                             {% for collection in collections %}
-                              
-                              {%- if collection.title == 'Camisas' -%}
-                                fasdkljsfadlk
-                              {%- endif -%}
-
                               {%- if collection.title == link.title -%}
                                 {% for i in (1..2) %}
                                   {% assign min = 1 %}
@@ -812,6 +806,7 @@
  
     </div>  {% endcomment %}
   </header>
+
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
