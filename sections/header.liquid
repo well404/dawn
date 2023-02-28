@@ -619,9 +619,8 @@
                                     <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}" /> 
                                   </a>
                                 {% endfor %}
-                              {%- endif -%}
 
-                              {%- if collection.title == link.title -%}
+                              {%- elsif collection.title == link.title -%}
                                 {% for i in (1..2) %}
                                   {% assign min = 1 %}
                                   {% assign max = collection.products.length %}
@@ -632,6 +631,8 @@
                                     <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}" /> 
                                   </a>
                                 {% endfor %}
+                              {%- else -%}
+
                               {%- endif -%}
                             {% endfor %}
                           </div>
