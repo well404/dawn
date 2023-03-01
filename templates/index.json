@@ -6,14 +6,15 @@
         "template--14574382874688__7095dbd4-d6f8-4bc8-bd4a-de642755e15f-1674327328d944972f-0": {
           "type": "slide",
           "settings": {
+            "redirect": "https:\/\/vicenza-menswear-7393.myshopify.com\/collections\/calca-slim-milao",
             "image": "shopify:\/\/shop_images\/Banners-Shopfy-home-02.gif",
             "image_mobile": "shopify:\/\/shop_images\/Mobile-1.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
+            "link": "shopify:\/\/collections\/calcas-alfaiataria",
+            "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
@@ -25,14 +26,15 @@
         "67bf3abb-44f2-491d-ad78-164db9db0d2c": {
           "type": "slide",
           "settings": {
+            "redirect": "{{ shop.brand.favicon_url }}",
             "image": "shopify:\/\/shop_images\/Banners-Shopfy-home-01.gif",
             "image_mobile": "shopify:\/\/shop_images\/Mobile_689d86cb-83d1-46fb-b0ac-87c1fefdb232.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
+            "link": "shopify:\/\/collections\/mais-vendidas",
+            "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
@@ -64,7 +66,7 @@
           "calcas-mais-vendidas",
           "camisas-mais-vendidas",
           "polos",
-          "camiseta-malha-egipcia"
+          "camiseta-malha-egipcia-1"
         ]
       }
     },
@@ -90,18 +92,18 @@
             "text": "oportunidades especiais para renovar o visual",
             "text_btn": "Comprar",
             "product": "",
-            "collection": "batas-de-linho"
+            "collection": "sale"
           }
         },
         "691fed9b-47a4-46f2-83dd-0f51dc7e0b85": {
           "type": "collection",
           "settings": {
             "image": "shopify:\/\/shop_images\/08.jpg",
-            "title": "Calça 247",
-            "text": "parece jeans, mas é moletom",
+            "title": "Calças Alfaiataria",
+            "text": "",
             "text_btn": "Comprar",
-            "product": "calca-alfaiataria-milao-classic-blue",
-            "collection": ""
+            "product": "",
+            "collection": "calcas-mais-vendidas"
           }
         },
         "80b3fc9c-6add-4637-8657-82961d71705b": {
@@ -111,8 +113,8 @@
             "title": "Básica Egípcia",
             "text": "A única camiseta que você precisa.",
             "text_btn": "Comprar",
-            "product": "calca-alfaiataria-milao-telha",
-            "collection": ""
+            "product": "",
+            "collection": "camiseta-malha-egipcia-1"
           }
         }
       },
@@ -127,6 +129,20 @@
     "main_home_products": {
       "type": "main-home-products",
       "blocks": {
+        "7a86883e-18de-401b-9c35-a5a10cfb7a6a": {
+          "type": "custom-collection",
+          "settings": {
+            "text": "Legacy Shoes",
+            "collection": "legacy-shoes"
+          }
+        },
+        "598a8d23-26a2-4f23-8a96-d6f81abdbc68": {
+          "type": "custom-collection",
+          "settings": {
+            "text": "Camisas mais Vendidas",
+            "collection": "camisas-mais-vendidas"
+          }
+        },
         "a791e995-96bc-4993-b614-e88199d3990c": {
           "type": "custom-collection",
           "settings": {
@@ -137,22 +153,16 @@
         "0bb2ea31-d0ac-4188-9545-3dd5971b0602": {
           "type": "custom-collection",
           "settings": {
-            "text": "Camisas",
-            "collection": "camisas"
-          }
-        },
-        "598a8d23-26a2-4f23-8a96-d6f81abdbc68": {
-          "type": "custom-collection",
-          "settings": {
-            "text": "Camisetas",
-            "collection": "camiseta"
+            "text": "Edição Limitada Copa 2022",
+            "collection": "edicao-limitada-copa-2022"
           }
         }
       },
       "block_order": [
+        "7a86883e-18de-401b-9c35-a5a10cfb7a6a",
+        "598a8d23-26a2-4f23-8a96-d6f81abdbc68",
         "a791e995-96bc-4993-b614-e88199d3990c",
-        "0bb2ea31-d0ac-4188-9545-3dd5971b0602",
-        "598a8d23-26a2-4f23-8a96-d6f81abdbc68"
+        "0bb2ea31-d0ac-4188-9545-3dd5971b0602"
       ],
       "settings": {
       }
@@ -263,7 +273,7 @@
             "image": "shopify:\/\/shop_images\/06.jpg",
             "title": "Básica Egípcia",
             "text": "Roupas masculinas básicas, com caimento perfeito e feitas para durar.",
-            "link": "",
+            "link": "shopify:\/\/collections\/camiseta-malha-egipcia-1",
             "text_btn": "Entenda"
           }
         }
