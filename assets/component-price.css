@@ -42,6 +42,7 @@
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   letter-spacing: 0.13rem;
   text-align: right;
+  position: relative;
 }
 
 @media screen and (min-width: 750px) {
