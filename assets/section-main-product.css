@@ -1765,12 +1765,12 @@ a.product__text {
   }
 
   .product-media-container .media {
-    padding-top: 500px !important;
+    padding-top: 300px !important;
   }
 
   .product-media-container .media img{
     max-width: 100%;
-    height: 500px;
+    height: 300px;
   }
 
   .product.grid{
@@ -1910,9 +1910,36 @@ a.product__text {
   color: yellow;
 }
 
+.flag-percentage{
+  position: static;
+  line-height: 125%;
+  display: flex;
+  padding: 4px 8px;
+  margin-bottom: 0.375rem;
+  background-color: #f12346;
+  border-radius: 9999rem;
+  font-size: 12px;
+  color: #fff;
+}
 
 .price--on-sale .price__sale{
   text-align: right;
+}
+
+.flag{
+  position: static;
+  background-color: #fff;
+  border-radius: 9999rem;
+  color: #1690d0;
+  text-align: right;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 125%;
+  padding: 4px 8px;
+  border: 1px solid currentColor;
 }
 
 .box-medidas-modal{
@@ -1948,71 +1975,25 @@ a.product__text {
   max-height: calc(100vh - 100px);
 }
 
-
-
-.product__media-wrapper{
-  position: relative;
-}
-.product__media-wrapper .box-flags{
-
-  position: absolute;
-  top: 15px;
-  left: 60px;
-  right: 15px;
-  z-index: 30;
-
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  gap: 15px;
-}
-
-.product__media-wrapper .box-flags > * {
-  margin: 0;
-}
-.product__media-wrapper .box-flags .flag{
-  position: static;
-  background-color: #fff;
-  border-radius: 9999rem;
-  color: #1690d0;
-  text-align: right;
-  letter-spacing: 0;
-  text-transform: none;
-  font-weight: 500;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 125%;
-  padding: 4px 8px;
-  border: 1px solid currentColor;
-}
-
-
-.product__media-wrapper .box-flags .flag-percentage{
-  position: static;
-  line-height: 125%;
-  display: flex;
-  padding: 4px 8px;
-  margin-bottom: 0.375rem;
-  background-color: #f12346;
-  border-radius: 9999rem;
-  font-size: 12px;
-  color: #fff;
-}
-
-
 @media (max-width: 600px) {
   .product__tax {
     display: none;
   }
+  .flag{
+    position: absolute;
+    right: 0;
+    width: auto;
+    top: 60px;
+    z-index: 40;
+    min-width: 105px;
+    border: 0;
+  }
+
   .box-medidas-modal{
     padding: 15px 10px;
   }
 
   .box-medidas-modal .box-content img{
     max-height: calc(100vh - 30px);
-  }
-
-  .product__media-wrapper .box-flags{
-    top: 20px;
   }
 }

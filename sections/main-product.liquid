@@ -113,27 +113,6 @@
   {%- endfor -%}
 
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
-
-      <div class="box-flags">
-        {% comment %} {% if product.available == false %}
-          <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
-            {{ 'products.product.sold_out' | t }}
-          </span>
-        {% endif %}
-     {% endcomment %}
-        {%- if product.compare_at_price > product.price and product.available -%}
-          {% comment %} <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-            {{ 'products.product.on_sale' | t }}
-          </span> {% endcomment %}
-          <span class="flag-percentage">{{ compare_at_price | minus:product.price | times:100 | divided_by:product.compare_at_price  }}% off</span>
-        {%- endif -%}
-    
-        {%- if product.metafields.custom.flag_one.value -%}
-          <span class="flag">{{product.metafields.custom.flag_one.value}}</span>
-        {%- endif -%}
-      
-      </div>
-
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
@@ -628,7 +607,7 @@
 
   <div class="box-medidas-modal">
     <div class="box-content">
-      {{ section.settings.tabela_medidas.src | img_url: "master" | img_tag }}
+      <img src="https://cdn.awsli.com.br/1291/1291411/arquivos/Versao-2Camisa-tabela-2.png" alt="Tabela de Medidas">
     </div>
   </div>
 
