@@ -53,6 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    
     {{ content_for_header }}
 
     {%- liquid
@@ -271,7 +272,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- endif -%}
 
     {% sections 'header-group' %}
-
     {%- render 'mobile-menu' -%}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">

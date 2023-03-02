@@ -213,8 +213,10 @@
 
 @media (max-width: 600px) {
     #tabs ul{
-        justify-content: center;
-        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px;
+        margin-bottom: 0;
     }
 
     #tabs_container{
