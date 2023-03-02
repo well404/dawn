@@ -579,6 +579,7 @@ a.product__text {
 }
 
 .product__tax {
+  display: none;
   margin-top: -1.4rem;
 }
 
@@ -1996,4 +1997,13 @@ a.product__text {
   .box-medidas-modal .box-content img{
     max-height: calc(100vh - 30px);
   }
+}
+
+.product__media-wrapper .box-flag{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  position: absolute;
+  top: 0;
 }
