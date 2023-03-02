@@ -1,0 +1,86 @@
+
+.box-custom-modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0, 0.8);
+    z-index: 50;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 200ms cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.box-custom-modal.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.box-custom-modal .box-content{
+    padding: 40px 30px 30px;
+    background-color: #000;
+    max-width: 450px;
+    position: relative;
+}
+
+.box-custom-modal .box-content h2{
+    text-align: center;
+    margin-top: 0;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.box-custom-modal .box-content p{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+.box-custom-modal .box-content img{
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.box-custom-modal .box-content form{
+    margin: 0;
+    max-width: 100%;
+}
+
+.box-custom-modal .box-content .newsletter-form__field-wrapper{
+    max-width: 100%;
+}
+
+.box-custom-modal .box-content .newsletter-form__field-wrapper .field{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-custom-modal .box-content .newsletter-form__field-wrapper .field::after{
+    display: none;
+}
+
+.box-custom-modal .box-content .newsletter-form__field-wrapper .field__input{
+    padding: 5px;
+}
+
+.box-custom-modal .box-content .newsletter-form__field-wrapper .field__input::placeholder{
+    color: black !important;
+    font-size: 16px !important;
+}
+
+.box-custom-modal .box-content .newsletter-form__field-wrapper .newsletter-form__button{
+    position: static;
+    background-color: #212121;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
