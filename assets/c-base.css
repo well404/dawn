@@ -17,3 +17,11 @@ body,
 *{
     font-family: "Inter", sans-serif !important;
 }
+
+[data-smart-inject-id="BOX_pushmail_optinNo_HTML"]{
+    display: none !important;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}

@@ -66,6 +66,13 @@
     display: none;
 }
 
+
+.box-custom-modal .box-content .newsletter-form__field-wrapper label{
+    top: 20%;
+}
+.box-custom-modal .box-content .newsletter-form__field-wrapper .field__input:focus ~ .field__label{
+    top: 10%;
+}
 .box-custom-modal .box-content .newsletter-form__field-wrapper .field__input{
     padding: 5px;
 }
@@ -83,4 +90,15 @@
     color: #fff;
     margin-top: 15px;
     text-transform: uppercase;
+}
+
+.box-custom-modal .box-content  .success-message{
+    background-color: green;
+    text-align: center;
+    color: #fff;
+    padding: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    display: none;
 }
